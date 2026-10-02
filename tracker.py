@@ -6,7 +6,7 @@ DISCORD_WEBHOOK = os.environ.get("DISCORD_WEBHOOK")
 
 def get_amazon_internships():
     # Amazon's frontend uses this JSON API to populate search results
-    url = "https://www.amazon.jobs/en/search.json?base_query=intern&loc_query=Jordan"
+    url = "https://www.amazon.jobs/en/search.json?country=JOR"
     headers = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=headers)
     
