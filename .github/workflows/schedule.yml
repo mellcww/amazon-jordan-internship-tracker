@@ -1,7 +1,7 @@
 name: Check Amazon Jobs
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '*/30 * * * *' # Changed to run every 30 minutes
   workflow_dispatch:
 
 permissions:
